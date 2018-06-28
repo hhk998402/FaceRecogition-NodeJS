@@ -1,0 +1,6 @@
+{
+  "name": "facerecog",
+  "description": "A deployment of Face Recognition",
+  "image": "heroku/nodejs",
+  "addons": []
+}
