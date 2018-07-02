@@ -2,6 +2,10 @@
 This is an implementation of the facerecognition.js module. 
 
 
-Pre-requisite
+*Pre-requisite*
 
 	Download the face-recognition npm module and follow the build instructions according to your system
+	
+*Usage*
+
+Next, `git clone` the project, and do `npm install`. If you have built performed the previous build step correctly, this step should go off without a hitch
