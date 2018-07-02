@@ -18,5 +18,5 @@ Then, `npm start` gets the server started on http://localhost:3000
 
 Here is a simple demonstration: 
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![Prediction Walkthrough](https://github.com/hhk998402/FaceRecogition-NodeJS/blob/master/routes/Demo_-FaceRecognition-on-NodeJS.gif)
 
