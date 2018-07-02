@@ -16,7 +16,11 @@ Then, `npm start` gets the server started on http://localhost:3000
 
 Some sample faces are provided in https://github.com/hhk998402/FaceRecogition-NodeJS/blob/master/routes/faces
 All newly added faces are stored here. Store the images as PNG Files only. Also, name the files in the following way: -
+	
 	firstName-middleName-lastName_anyString.png
+
+Make sure the fileName doesn't consist of any spaces or any other special character apart from underscore. Use hyphens in place of spaces for longer names.
+
 
 **Routes and their Usage**
 
@@ -25,4 +29,8 @@ All newly added faces are stored here. Store the images as PNG Files only. Also,
 Here is a simple demonstration: 
 
 ![Prediction Walkthrough](https://github.com/hhk998402/FaceRecogition-NodeJS/blob/master/routes/Demo_-FaceRecognition-on-NodeJS.gif)
+
+Now, to **train new faces**, first type your name in the input box below the capture window. Don't use underscores or spaces. Use hyphens in place of spaces. After entering a valid name, click the "Click here to train" button alongside. Make sure you are prominently visible in the capture box. Wait for the training completed message to come before adding a new image. 
+
+![Training Walkthrough](https://github.com/hhk998402/FaceRecogition-NodeJS/blob/master/routes/Training_example.gif)
 
