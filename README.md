@@ -26,7 +26,7 @@ Make sure the fileName doesn't consist of any spaces or any other special charac
 
 1. http://localhost:3000/capture (GET) - This is the main page, wherein you can test and see the predictions as well as train new faces. To **perform facial recognition** against the images that have already been trained, go to `http://localhost:3000/capture/` and click on the camera icon in the capture window. Wait for about three seconds and the prediction will be shown above with the closeness to the answer. Remember, here the lower the distance, the better the prediction.
 	
-	To take another image, click the trash icon to re-engage the video feed, and take another snap.
+	*To take another image, click the trash icon to re-engage the video feed, and take another snap.*
 
 Here is a simple demonstration: 
 
@@ -36,4 +36,6 @@ Now, to **train new faces**, first type your name in the input box below the cap
 
 ![Training Walkthrough](https://github.com/hhk998402/FaceRecogition-NodeJS/blob/master/routes/Training_example.gif)
 
-2. http://localhost:3000/predict (POST) -  It is accessed through an AJAX POST request after pressing the camera icon in the capture box. It is used to return the predicted face in the image that has been sent.
+2. http://localhost:3000/predict (POST) -  It is accessed through an AJAX POST request after pressing the camera icon in the capture box. It is used to return the predicted face in the image that has been sent to it. The image is passed to the route in base64 format.
+
+3. http://localhost:3000/train (POST) - It is accessed through an AJAX POST request after pressing the Train Button. It is used to add faces to both existing and new users.
