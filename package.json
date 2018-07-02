@@ -13,9 +13,12 @@
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "express": "~4.16.0",
+    "face-recognition": "^0.9.3",
     "fs": "0.0.1-security",
+    "glob": "^7.1.2",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
+    "ngrok": "^3.0.1",
     "path": "^0.12.7"
   }
 }
