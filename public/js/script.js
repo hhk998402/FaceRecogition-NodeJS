@@ -139,25 +139,36 @@ document.addEventListener('DOMContentLoaded', function () {
         var snap = takeSnapshot();
         $("#prediction").text("Wait, Training");
         var name = $('#usr').val();
-        console.log(name);
-        var data = JSON.stringify({image:snap,name:name});
-        console.log(data);
-        $.ajax({
-            url: '/train',
-            type: 'post',
-            dataType: 'json',
-            contentType: 'application/json',
-            success: function (data) {
-                console.log(data);
-                if(data.msg){
-                    $("#prediction").text(data.msg);
-                }
-                else{
-                    $("#prediction").text("Training complete!");
-                }
-            },
-            data: data
-        });
+        if(name===""){
+            $("#prediction").text("For Training, please enter your name in the input box");
+        }
+        else if(name.indexOf("_")!==-1){
+            $("#prediction").text("No underscores allowed in name entry box");
+        }
+        else if(name.indexOf(" ")!==-1){
+            $("#prediction").text("No spaces allowed in name entry box");
+        }
+        else {
+            // console.log(name);
+            var data = JSON.stringify({image: snap, name: name});
+            console.log(data);
+            $.ajax({
+                url: '/train',
+                type: 'post',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (data) {
+                    console.log(data);
+                    if (data.msg) {
+                        $("#prediction").text(data.msg);
+                    }
+                    else {
+                        $("#prediction").text("Training complete!");
+                    }
+                },
+                data: data
+            });
+        }
 
     });
 

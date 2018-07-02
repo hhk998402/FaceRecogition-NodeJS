@@ -128,7 +128,7 @@ router.post('/predict', function(req, res) {
                 const predictionsAll = recognizer.predict(faceImage[0]);
                 console.log(predictionsAll);
                 const predictions = recognizer.predictBest(faceImage[0]);
-                if (predictions['distance'] > 0.6) {
+                if (predictions['distance'] > 0.5) {
                     res.json({"msg": "NOT REGISTERED"});
                     console.log("Not Registered")
                 }
