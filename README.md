@@ -15,4 +15,4 @@ Then, `npm start` gets the server started on http://localhost:3000
 **Routes and their Usage**
 
 1. http://localhost:3000/capture - This is the main page, wherein you can test and see the predictions as well as train new faces. 
-..1. efiuweifuwf
+..* fehbfwjebfjwef
