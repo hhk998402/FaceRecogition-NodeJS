@@ -38,4 +38,4 @@ Now, to **train new faces**, first type your name in the input box below the cap
 
 2. http://localhost:3000/predict (POST) -  It is accessed through an AJAX POST request after pressing the camera icon in the capture box. It is used to return the predicted face in the image that has been sent to it. The image is passed to the route in base64 format.
 
-3. http://localhost:3000/train (POST) - It is accessed through an AJAX POST request after pressing the Train Button. It is used to add faces to both existing and new users.
+3. http://localhost:3000/train (POST) - It is accessed through an AJAX POST request after pressing the Train Button. It is used to add faces to both existing and new users..
