@@ -1,5 +1,5 @@
 # FaceRecogition-NodeJS
-This is an implementation of the facerecognition.js module. 
+This is an implementation of the facerecognition.js module on NodeJS. 
 
 
 **Pre-requisite**
